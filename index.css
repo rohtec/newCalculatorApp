@@ -149,8 +149,8 @@ main {
     padding-top: 7%;
     background: linear-gradient(to bottom, RGBA(237, 247,255, 1), RGBA(237, 246, 253, 1));
 	border-radius:10px;
-	width: 74.5vw;
-	height: 81vh;
+	width: 78.5vw;
+	height: 83vh;
 	align-items: center;
 	box-shadow: 2px 2px 6px rgba(128, 128, 128, 0.7);
 }
