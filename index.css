@@ -13,20 +13,20 @@ main {
 	flex-flow: column nowrap;
 	align-items: center;
 	width: 70vw;
-	height: 110vh;
+	height: 99vh;
 	margin: 0 12%;
-	padding: 2% 0 0 0;
+	padding: 2% 0;
 	box-shadow: 5px 5px 6px rgba(128, 128, 128, 0.5);
 	background: linear-gradient(to bottom, RGBA(252, 253, 255, 0.98), RGBA(147, 208, 233, 0.9));
 }
 .first {
 	display: flex;
 	flex-flow: column nowrap;
-        padding-top: 6%;
-       background: linear-gradient(to bottom, RGBA(237, 247,255, 1), RGBA(237, 246, 253, 1));
+    padding-top: 3%;
+    background: linear-gradient(to bottom, RGBA(237, 247,255, 1), RGBA(237, 246, 253, 1));
 	border-radius:10px;
-	width: 85vw;
-	height: 88vh;
+	width: 26.1vw;
+	height: 85vh;
 	align-items: center;
 	box-shadow: 2px 2px 6px rgba(128, 128, 128, 0.7);
 }
@@ -65,7 +65,7 @@ main {
     flex-flow: column nowrap;
     background-color: transparent;
 	border-radius: 2px;
-	width: 23rem;
+	width: 22.8rem;
 	height: 72.5vh;
 	margin-top: 2%;
 /*	border:1px solid black;*/
@@ -115,7 +115,7 @@ input {
 	display: flex;
 	border-radius: 3px;
 	border: 2px solid #1a2a91;
-	width: 23rem;
+	width: 22.5rem;
 	height: 3rem;
 	background-color: white;
 	align-items: baseline;
@@ -124,11 +124,12 @@ input {
 	font-weight: 500;
 	color: black;
 }
-@media screen and (max-width: {
-	
+@media all and (max-width: 768px) {
 	body {
-   
-	margin: 0;
+    width: 99vw;
+    height: 99vh;
+	background-color: white;
+	display: flex;
 }
 main {
 	display: flex;
@@ -136,39 +137,39 @@ main {
 	flex-flow: column nowrap;
 	width: 99vw;
 	height: 99vh;
-	margin: 0 1%;
-	padding:4px
-/* 	padding: 5% 0; */
+	margin: 0;
+/*	margin-left: 0;*/
+/*	padding: 5% 0;*/
 	box-shadow: 15px 15px 6px -3px rgba(128, 128, 128, 0.5);
 	background: linear-gradient(to bottom, RGBA(252, 253, 255, 0.98), RGBA(147, 208, 233, 0.9));
 }
 .first {
 	display: flex;
 	flex-flow: column nowrap;
-        padding-top: 6%;
-        background: linear-gradient(to bottom, RGBA(237, 247,255, 1), RGBA(237, 246, 253, 1));
+    padding-top: 7%;
+    background: linear-gradient(to bottom, RGBA(237, 247,255, 1), RGBA(237, 246, 253, 1));
 	border-radius:10px;
-	width: 88.5vw;
-	height: 89vh;
+	width: 74.5vw;
+	height: 81vh;
 	align-items: center;
-/*	box-shadow: 3px 2px 2px 2px rgba(128, 128, 128, 0.8);*/
 	box-shadow: 2px 2px 6px rgba(128, 128, 128, 0.7);
 }
 .container {
 	display: flex;
-        font-family: Arial;
+    font-family: Arial;
 	font-weight: bolder;
-	font-size: 30px;
+	font-size: 28px;
 	align-items: center;
-    margin-top: 2%;
-    width: 65vw;
+    margin-top: 8%;
+    width: 17rem;
     color: RGB(26 42 145);
     text-shadow: 2px 2px 4px rgba(60, 60, 60, 0.7);
-	height: 3rem;
+	height: 2rem;
+/*	border: 1px solid red;*/
 
 }
 #typingtext {
-/* 	padding-left: 5%; */
+	padding-left: 7%;
 	overflow: hidden;
 	white-space: nowrap;
 	width: 0;
@@ -176,7 +177,6 @@ main {
 	animation-duration: 1s;
 	animation-timing-function: steps(30, end);
 	animation-fill-mode: forwards;
-    
 
 }
 @keyframes typing {
@@ -185,31 +185,63 @@ main {
 }
 button {  
 	margin: 5px;
-	width: 4.65rem;
-	height: 4.9rem;
+	width: 4.5rem;
+	height: 4.8rem;
 /*	border: 1px solid #e5e5e5;*/
-         border: none;
+    border: none;
 	background-color: rgb(76,72,250);
 	border-radius: 7px;
-	font-size: 21px;
+	font-size: 19px;
 	color: whitesmoke;
 	font-family: Poppins;
 	font-weight: 500;
 	cursor: pointer;
 	box-shadow: 0px 10px 6px -6px rgba(128, 128, 128, 0.99);
 }
+button:hover {
+	font-size: 22px;
+}
 input {
 	flex-flow: column nowrap;
 	display: flex;
 	border-radius: 3px;
 	border: 2px solid #1a2a91;
-	width: 16rem;
+	width: 20.9rem;
 	height: 3rem;
 	background-color: white;
 	align-items: baseline;
-	font-size: 25px;
+	font-size: 30px;
 	font-family: Poppins;
 	font-weight: 500;
 	color: black;
 }
+.buttons {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: transparent;
+	border-radius: 2px;
+	width: 22.5rem;
+	height: 71.5vh;
+	margin-top: 2%;
+	margin-left: 6%;
+/*	border:1px solid black;*/
 }
+#plus {
+	margin-left: 10px;
+	height: 10.2rem;
+	position: absolute;
+}
+#equal {
+	width: 9.92rem;
+	background-color: rgb(0,128,1);
+}
+#clear {
+	font-size: 28px;
+}
+#clear, #del {
+	background-color: rgb(219,21,58);
+}
+
+
+}
+	
