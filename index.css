@@ -149,7 +149,7 @@ main {
     padding-top: 7%;
     background: linear-gradient(to bottom, RGBA(237, 247,255, 1), RGBA(237, 246, 253, 1));
 	border-radius:10px;
-	width: 82.5vw;
+	width: 84.5vw;
 	height: 84vh;
 	align-items: center;
 	box-shadow: 2px 2px 6px rgba(128, 128, 128, 0.7);
@@ -184,7 +184,7 @@ main {
 	to { width: 100% }
 }
 button {  
-	margin: 2px;
+	margin: 5px;
 	width: 4.5rem;
 	height: 4.8rem;
 /*	border: 1px solid #e5e5e5;*/
@@ -236,7 +236,7 @@ input {
 	background-color: rgb(0,128,1);
 }
 #clear {
-	font-size: 28px;
+	font-size: 25px;
 }
 #clear, #del {
 	background-color: rgb(219,21,58);
