@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>My Calculator App</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+<main>
+	<div class ="container"><p id="typingtext">MY CALCULATOR</p></div>
+	<div class="first">
+
+		<input type="text" id="display" placeholder="" readonly>
+		<div class="buttons">
+			<div class="bott">
+				<div class="bottons">
+			    <button id="clear" onclick="clearDisplay('c'); playClickSound()">c</button>
+			    <button onclick="appendToDisplay('%'); playClickSound()">%</button>
+			    <button onclick="appendToDisplay('mod'); playClickSound()">mod</button>
+			    <button onclick="appendToDisplay('**'); playClickSound()">></button>
+			</div>
+			<div class="bottons"> 
+				<button onclick="appendToDisplay('-'); playClickSound()">-</button>
+				<button onclick="appendToDisplay('9'); playClickSound()">9</button>
+				<button onclick="appendToDisplay('8'); playClickSound()">8</button>
+				<button onclick="appendToDisplay('7'); playClickSound()">7</button>
+			</div>
+			<div class="bottons">
+				<button onclick="appendToDisplay('/'); playClickSound()">/</button>
+				<button onclick="appendToDisplay('6'); playClickSound()">6</button>
+				<button onclick="appendToDisplay('5'); playClickSound()">5</button>
+				<button onclick="appendToDisplay('4'); playClickSound()">4</button>
+			</div>
+			<div class="bottons">
+				<button onclick="appendToDisplay('*'); playClickSound()">x</button>
+				<button onclick="appendToDisplay('3'); playClickSound()">3</button>
+				<button onclick="appendToDisplay('2'); playClickSound()">2</button>
+				<button onclick="appendToDisplay('1'); playClickSound()">1</button>
+			</div>
+			<div class="bottons">
+			    <button id="del" onclick="deleteLastCharacter(); playClickSound()">Del</button>
+				<button onclick="appendToDisplay('00'); playClickSound()">00</button>
+				<button onclick="appendToDisplay('0'); playClickSound()">0</button>
+				<button id="plus" onclick="appendToDisplay('+'); playClickSound()">+</button>
+				</div>
+			</div>
+			<div class="bottons">
+			<button id="equal" onclick="calculateResult(); playClickSound()">=</button>
+			<button onclick="appendToDisplay('.'); playClickSound()">.</button>
+            <audio id="click-sound">
+            	<source src="C:\NewCal\mixkit-fast-double-click-on-mouse-275.wav" type="audio/mpeg">
+            </audio>
+			</div>
+		</div>
+</main>
+<script src="index.js"></script>
+	</body>
+</html>
